@@ -61,27 +61,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="py-24 border-y border-slate-100">
-        <div className="container px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-12">
-          {[
-            { label: "Yıllık Taşıma", value: "10K+" },
-            { label: "Ülke Ağı", value: "50+" },
-            { label: "Müşteri Memnuniyeti", value: "%99" },
-            { label: "Deneyim", value: "15 Yıl" }
-          ].map((stat, i) => (
+      {/* ELITE PERFORMANCE INDICATORS - REPLACING STATS */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="container px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Primary Stat Card */}
             <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="text-center md:text-left"
+              className="lg:col-span-2 bg-[#0f1d3a] rounded-[3rem] p-12 md:p-16 relative overflow-hidden group"
             >
-              <span className="block text-4xl font-black text-[#0f1d3a]">{stat.value}</span>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">{stat.label}</span>
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div>
+                  <span className="text-[10px] font-black tracking-[0.6em] text-[#004e98] uppercase mb-8 block">Yeni Nesil Lojistik</span>
+                  <h3 className="text-4xl md:text-7xl font-black text-white tracking-tighter leading-[0.9] mb-12">
+                    GELECEĞİ <br /> <span className="text-[#004e98] italic">TASARLIYORUZ.</span>
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                  <div className="group/item">
+                    <div className="w-8 h-8 border-t-2 border-l-2 border-[#004e98] mb-4 group-hover/item:scale-110 transition-transform" />
+                    <span className="block text-2xl font-black text-white mb-2 leading-none uppercase tracking-tighter">Modern <br /> Filo</span>
+                    <span className="text-[9px] font-black tracking-[0.3em] text-white/40 uppercase">En Yeni Teknoloji</span>
+                  </div>
+                  <div className="group/item">
+                    <div className="w-8 h-8 border-t-2 border-l-2 border-[#004e98] mb-4 group-hover/item:scale-110 transition-transform" />
+                    <span className="block text-2xl font-black text-white mb-2 leading-none uppercase tracking-tighter">Butik <br /> Hizmet</span>
+                    <span className="text-[9px] font-black tracking-[0.3em] text-white/40 uppercase">Kişiye Özel Çözüm</span>
+                  </div>
+                  <div className="group/item">
+                    <div className="w-8 h-8 border-t-2 border-l-2 border-[#004e98] mb-4 group-hover/item:scale-110 transition-transform" />
+                    <span className="block text-2xl font-black text-white mb-2 leading-none uppercase tracking-tighter">Dijital <br /> Takip</span>
+                    <span className="text-[9px] font-black tracking-[0.3em] text-white/40 uppercase">Şeffaf Operasyon</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative Background Elements */}
+              <div className="absolute right-[-10%] top-[-10%] w-[50%] h-[100%] bg-[#004e98]/10 blur-[100px] rounded-full group-hover:bg-[#004e98]/20 transition-all duration-1000" />
+              <div className="absolute bottom-0 right-0 p-12 opacity-5 text-white select-none transition-transform duration-1000 group-hover:scale-110">
+                <Truck size={300} strokeWidth={1} />
+              </div>
             </motion.div>
-          ))}
+
+            {/* Secondary Highlight - Replacing Experience with "Modern Solution" */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-slate-50 rounded-[3rem] p-12 border border-slate-100 flex flex-col justify-between group hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-700"
+            >
+              <div>
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-10 group-hover:bg-[#0f1d3a] transition-all duration-500">
+                  <ShieldCheck className="w-8 h-8 text-[#004e98] group-hover:text-white transition-all duration-500" />
+                </div>
+                <h4 className="text-2xl font-black text-[#0f1d3a] tracking-tighter uppercase mb-6 leading-tight">Sınırsız <br /> Güvence Altyapısı</h4>
+                <p className="text-slate-500 text-sm leading-[1.6] font-medium">
+                  Yeni bir heyecan ve en gelişmiş altyapıyla yola çıktık. Tüm süreçlerimizde en yüksek global standartları uyguluyoruz.
+                </p>
+              </div>
+
+              <Link href="/hizmetlerimiz" className="mt-12 flex items-center gap-3 text-[10px] font-black tracking-widest text-[#004e98] uppercase group/link">
+                Detayları İnceleyin
+                <div className="w-6 h-6 rounded-full border border-[#004e98]/20 flex items-center justify-center group-hover/link:bg-[#004e98] group-hover/link:text-white transition-all">
+                  <ArrowRight className="w-3 h-3" />
+                </div>
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </section>
 
