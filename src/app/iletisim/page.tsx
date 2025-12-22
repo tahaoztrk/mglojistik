@@ -74,7 +74,7 @@ export default function Contact() {
                         {/* Google Maps Embed */}
                         <div className="h-[600px] bg-slate-50 border border-slate-200 rounded-sm overflow-hidden shadow-inner">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.0628318182962!2d28.9715509!3d40.2458021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca389c93717d07%3A0xc47e30777553f17d!2sAdnan%20Menderes%2C%20Turgut%20%C3%96zal%20Cd.%20No%3A31%2C%2016150%20Osmangazi%2FBursa!5e0!3m2!1str!2str!4v1703208000000!5m2!1str!2str"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.2873068872671!2d28.95870044187484!3d40.25525042943695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca14872e467989%3A0x34f10ebfb15bfe9e!2zRW1layBaZWthaSBHw7xtw7zFn2RpxZ8sIFR1cmd1dCDDlnphbCBDZC4gTm86MzEsIDE2MTUwIE9zbWFuZ2F6acyHL0J1cnNh!5e0!3m2!1str!2str!4v1766368978759!5m2!1str!2str"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
