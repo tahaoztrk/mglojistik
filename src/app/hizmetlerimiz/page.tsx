@@ -11,7 +11,7 @@ const services = [
     { id: "01", title: "PROJE & İHALE", desc: "Büyük ölçekli stratejik sevkiyatlar ve kamu ihaleleri için özel çözümler.", size: "lg", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200" },
     { id: "02", title: "ENDÜSTRİYEL", desc: "Ağır sanayi hammadde lojistiği.", size: "sm", img: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=600" },
     { id: "03", title: "TIBBİ & MEDİKAL", desc: "Hassas cihaz ve medikal ürün sevkiyatı.", size: "sm", img: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600" },
-    { id: "04", title: "AÇIK YÜK", desc: "Gabari dışı ve standart dışı özel taşımacılık.", size: "md", img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800" },
+    { id: "04", title: "AÇIK YÜK", desc: "Gabari dışı ve standart dışı özel taşımacılık.", size: "md", img: "/hero-long-truck.png" },
     { id: "05", title: "SAC & RULO", desc: "Ağır sanayi tipi rulo sac uzmanlığı.", size: "md", img: "/service-sac-rulo.png" },
     { id: "06", title: "KONTEYNER", desc: "Global liman ve kara yolu konteyner bağlantıları.", size: "lg", img: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=1200" },
     { id: "07", title: "DEPOLAMA", desc: "Hızlı ve akıllı stok yönetim sistemleri.", size: "sm", img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=600" },

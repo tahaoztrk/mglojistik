@@ -204,7 +204,7 @@ export default function Home() {
               },
               {
                 title: "Açık Yük",
-                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600",
+                img: "/hero-long-truck.png",
                 desc: "Gabari dışı sevkiyat."
               }
             ].map((service, i) => (
